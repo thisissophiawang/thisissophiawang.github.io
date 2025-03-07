@@ -1,0 +1,16 @@
+baseURL = 'https://thisissophiawang.github.io/'
+languageCode = 'en-us'
+title = 'Sofia'
+
+
+
+
+############################ Markup ##############################
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+
+
+
+
