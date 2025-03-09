@@ -1,0 +1,89 @@
+{{ define "main" }}
+
+
+  <div class="container project-article-wrap">
+    <div class="row d-flex justify-content-center pb-0">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <h1 class="display-1 fw-bold">
+         {{ .Title }}<br>
+        </h1>
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Project overview</h2>
+          A machine learning system that identifies multiple waste categories (recyclable, hazardous, kitchen, and other waste) in real-time. Using YOLOv11 for object detection, it provides bounding box visualizations and tailored recycling recommendations. The project includes an interactive data analysis dashboard for waste trend analysis built with Gradio.
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p3_1.png" "Alt" ""  ) }}
+          </div>
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p3_2.png" "Alt" ""  ) }}
+          </div>
+        </div>
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Computer Vision-Enhanced Waste Sorting Assistant</h2>
+          <div>
+            This project helps international students and newcomers with waste sorting by providing recycling recommendations and visualizing waste trends through a dashboard, making waste management easier and more accessible. Using computer vision techniques, the system identifies multiple waste categories in real-time and provides data-driven insights to improve recycling habits.
+          </div>
+        </div>
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Key features</h2>
+          <ul>
+            <li><span class="distinguish-text1">Real-time detection</span> using <span class="distinguish-text1">YOLOv11</span> to identify recyclable, hazardous, kitchen, and other waste categories in a single image.</li>
+            <li><span class="distinguish-text1">Bounding box visualizations</span> with confidence scores for each detected waste item.</li>
+            <li><span class="distinguish-text1">Tailored recycling recommendations</span> based on detected waste types.</li>
+            <li><span class="distinguish-text1">Interactive data analysis dashboard</span> for waste trend visualization using Gradio.</li>
+            <li><span class="distinguish-text1">Regional waste data analysis</span> for Burnaby, Coquitlam, Richmond, and Surrey areas.</li>
+          </ul>
+        </div>
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Performance Metrics</h2>
+          <ul>
+            <li>83.49% – mAP@50 (<span class="distinguish-text1">Mean Average Precision</span>)</li>
+            <li>74.97% – mAP@50-95</li>
+            <li>78.0% – Recall</li>
+            <li>81.2% – Precision</li>
+          </ul>
+        </div>
+
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Try our demo</h2>
+
+          <div class="mt-5 mb-5">
+            <a href="https://huggingface.co/spaces/96philly/5330final" aria-label="github link" class="btn btn-outline-light">
+              <small>Huggingface</small>
+            </a>
+          </div>
+        </div>
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">View on github</h2>
+
+          <div class="mt-5 mb-5">
+            <a href="https://github.com/thisissophiawang/Computer-Vision-Waste-Sorting-Assistant" aria-label="github link" class="btn btn-outline-light">
+              <small>Code</small>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+{{ end }}

@@ -1,0 +1,170 @@
+{{ define "main" }}
+
+
+  <div class="container project-article-wrap">
+    <div class="row d-flex justify-content-center pb-0">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <h1 class="display-1 fw-bold">
+         {{ .Title }}<br>
+        </h1>
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Project overview</h2>
+          <p>
+            ElektraFi is a <span class="distinguish-text1">financial technology platform</span> that transforms personal finance management into an engaging and rewarding experience. The project focuses on implementing a <span class="distinguish-text1">gamification framework</span> that motivates users to build healthy financial habits through structured challenges, streaks, and achievement badges.
+          </p>
+          <p>
+            The Financial Challenges feature serves as the central pillar of the gamification strategy, allowing users to <span class="distinguish-text1">participate in various financial tasks</span> and <span class="distinguish-text1">track their progress over time</span>. The platform reinforces positive financial behaviors through points, badges, and visual feedback.
+          </p>
+          <p>
+            <span class="distinguish-text1">Tech Stack</span><br>
+            TypeScript/TSX | SCSS | Node.js | Python | React | Redux
+          </p>
+          <p><a  class="link-fancy border-secondary link-fancy-light " href="www.elektrafi.com">Website</a></p>
+
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_1.png" "Alt" ""  ) }}
+          </div>
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_2.png" "Alt" ""  ) }}
+          </div>
+           <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_3.png" "Alt" ""  ) }}
+          </div>
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_4.png" "Alt" ""  ) }}
+          </div>
+
+
+        </div>
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 "> ElektraFi - Financial Challenges Platform</h2>
+          <div>
+            A gamified FinTech platform designed to improve user engagement with personal finance through interactive challenges and reward systems.
+          </div>
+        </div>
+
+
+        <div class="  pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Key features</h2>
+
+          <div class=" mb-5" >
+            <p>🏆 Challenge System</p>
+            <p>Structured financial challenges with clear objectives, progress tracking, and reward mechanisms to encourage consistent financial habits.</p>
+          </div>
+
+          <div class=" mb-5" >
+            <p>📊 Progress Tracking</p>
+            <p>Visual representation of daily progress, completion statistics, and streak counters to motivate continuous engagement.</p>
+          </div>
+
+          <div class=" mb-5" >
+            <p>🎖 Badge System</p>
+            <p>Achievement badges (Bronze, Silver, Gold) and special rewards like profile themes and avatar frames to recognize user accomplishments.</p>
+          </div>
+
+          <div class=" mb-5" >
+            <p>⏳ Streak Mechanics</p>
+            <p>Track and reward consecutive days or weeks of completing financial tasks, encouraging habit formation and consistency.</p>
+          </div>
+
+          <div class=" mb-5" >
+            <p>💰 Points Economy</p>
+            <p>Point-based reward system that quantifies user progress and unlocks rewards at specific point thresholds (e.g., 3000 points).</p>
+          </div>
+
+          <div class=" mb-5" >
+            <p>📈 Financial Dashboard</p>
+            <p>Integration with the main financial dashboard, showing how challenges connect to overall financial health metrics and goals.</p>
+          </div>
+
+        </div>
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Implementation Process</h2>
+          <ol>
+            <li>
+              <span class="fs-6">Research & Concept Development</span>
+              <ul class="fs-0">
+                <li>Analyzed FinTech competitors and gamification best practices to identify effective engagement mechanisms.</li>
+                <li>Developed concept prototypes for the gamification system focused on financial health.</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="fs-6">UI/UX Design</span>
+              <ul class="fs-0">
+                <li>Created intuitive interface designs in Figma for the "Tasks" and "Financial Challenges" pages.</li>
+                <li>Emphasized clear progress visualization, achievement displays, and challenge cards.</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="fs-6">Frontend Development</span>
+              <ul class="fs-0">
+                <li>Implemented the designed UI using TypeScript/TSX and SCSS, creating responsive components for challenge cards, progress indicators, badges, and streak counters.</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="fs-6">Backend Integration</span>
+              <ul class="fs-0">
+                <li>Extended the backend (Node.js, Python) to support challenge tracking, streak calculations, points accumulation, and badge award logic.</li>
+                <li>Implemented APIs for challenge completion verification.</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="fs-6">Testing & Optimization</span>
+              <ul class="fs-0">
+                <li>Conducted user testing to validate engagement metrics.</li>
+                <li>Refined challenge difficulty levels, point allocations, and visual feedback based on user response data.</li>
+              </ul>
+            </li>
+
+          </ol>
+        </div>
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Results & Impact</h2>
+          <ul>
+            <li>32% Increase in daily active users</li>
+            <li>47% Higher user retention rate</li>
+            <li>28% Increase in savings goal completion</li>
+            <li>4.2x More frequent budget reviews</li>
+          </ul>
+        </div>
+
+
+
+
+
+
+        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">View Project</h2>
+
+          <div class="mt-5 mb-5">
+            <a href="https://www.elektrafi.com" aria-label="github link" class="btn btn-outline-light">
+              <small>Project</small>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+{{ end }}
