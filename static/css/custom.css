@@ -47,3 +47,26 @@
     url('../fonts/inter-v12-latin-700.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+
+
+
+
+.outer-light{
+    color: hotpink;
+
+    transform: scale(1.1);
+    border: 2px solid hotpink;
+    -webkit-box-shadow: 0px 0px 5px 1px hotpink;
+    -moz-box-shadow: 0px 0px 5px 1px hotpink;
+    box-shadow: 0px 0px 5px 1px hotpink;
+
+    padding: 0.4rem;
+}
+
+.project-article-wrap {
+
+}
+.project-article-wrap img {
+    width: 100%;
+}

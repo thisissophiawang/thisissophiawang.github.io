@@ -1,0 +1,86 @@
+{{ define "main" }}
+
+
+  <div class="container project-article-wrap">
+    <div class="row d-flex justify-content-center py-vh-5 pb-0">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <h1 class="display-1 fw-bold">
+          Building Elevator Simulation <br>
+          <span class="fs-4">Multi-floor System Controller</span><br>
+        </h1>
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Project overview</h2>
+          An interactive Java application that simulates a customizable building elevator system with dynamic request handling and real-time status visualization.
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/p1.png" "Alt" "Elevator simulation"  ) }}
+          </div>
+        </div>
+
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Key features</h2>
+          <ul>
+            <li>Multi-floor & multi-elevator support</li>
+            <li>Real-time request handling algorithm</li>
+            <li>Dynamic capacity management</li>
+            <li>Interactive visualization dashboard</li>
+          </ul>
+        </div>
+
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Architecture</h2>
+          The application follows the <strong>MVC (Model-View-Controller)</strong> design pattern, providing a user-friendly graphical interface where:
+           <ul>
+            <li>Building Managers can configure and monitor the elevator system.</li>
+            <li>Users can request elevators and track their movements in real time.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Explore project</h2>
+           <div class="d-flex mt-5" style="justify-content: space-between;">
+            <div class="outer-light">JAVA</div>
+            <div class="outer-light">SWING</div>
+            <div class="outer-light">MVC</div>
+            <div class="outer-light">OOP</div>
+          </div>
+        </div>
+
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">Elevator System Class Diagram</h2>
+
+          <div class="mt-5 ">
+            {{ partial "func/image" (dict "Src" "/img/project/design.png" "Alt" "Elevator simulation Design"  ) }}
+          </div>
+        </div>
+
+
+
+        <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 ">View source on github</h2>
+
+          <div class="mt-5 mb-5">
+            <a href="https://github.com/thisissophiawang/Elevator-Control-System" aria-label="github link" class="btn btn-outline-light">
+              <small>Code</small>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+{{ end }}
