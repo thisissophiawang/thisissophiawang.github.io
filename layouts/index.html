@@ -5,32 +5,34 @@
   {{/*cv intro*/}}
   <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
     <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
-    <div class="container position-relative mt-5 px-vw-5  ">
-      <div class="row d-flex align-items-center  ">
-        <div class="  col-lg-7">
+    <div class="container position-relative mt-5 px-vw-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-7">
           <span class="h5 text-secondary fw-lighter">Hi there! I'm</span>
-          <h1 class="display-2 mt-3 mb-3 lh-1">SOPHIA WANG</h1>
+          <h1 class="display-2 mt-3 mb-3 lh-1 name-title">SOPHIA WANG</h1>
 
-          <div class="col-12  col-lg-12">
-
+          <div class="col-12 col-lg-12">
             <p class="lead text-secondary">
-              Technology & Business Integration Specialist  <br>  FinTech  <br> Business Analyst  <br>  UX/UI   <br>  <br>  M.S. Computer Science & Database Technology  <br>  B.S. Finance & Fine Art 
+              Technology Integration Specialist
             </p>
-            <a href="{{ relLangURL "file/Sophia_Resume.pdf" }}" aria-label="Download my cv" class="btn btn-outline-light">
+            <p class="specialties">
+              FinTech · Business Analytics · UX/UI Design
+            </p>
+            <div class="education mt-4">
+              <p class="degree">M.S. Computer Science & Database Technology</p>
+              <p class="degree">B.S. Finance & Fine Art</p>
+            </div>
+            <a href="{{ relLangURL "file/Sophia_Resume.pdf" }}" aria-label="Download my cv" class="btn btn-outline-light mt-4">
               <small>View My CV</small>
             </a>
           </div>
         </div>
 
-
-        <div class="  col-lg-4  ">
+        <div class="col-lg-4">
           <img src="img/pt2.png" width="1116" height="1578" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
         </div>
-
-
       </div>
     </div>
-
   </div>
 
 
@@ -83,4 +85,31 @@
     </div>
 
   </div>
+
+  <style>
+    .name-title {
+      color: #f8f8f8;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .specialties {
+      font-size: 1.2rem;
+      color: #888;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .degree {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+    }
+
+    .education {
+      margin-bottom: 1rem;
+    }
+  </style>
 {{ end }}
