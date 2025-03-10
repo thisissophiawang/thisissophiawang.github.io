@@ -71,6 +71,19 @@
     width: 100%;
 }
 
+.wireframe-img {
+    max-width: 800px;  /* 限制最大宽度 */
+    margin: 0 auto;    /* 居中显示 */
+    display: block;    /* 确保margin: auto生效 */
+    transition: transform 0.3s ease-in-out;  /* 添加过渡效果 */
+    cursor: pointer;   /* 显示鼠标手型 */
+}
+
+.wireframe-img:hover {
+    transform: scale(1.02);  /* 悬停时放大 */
+    filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.5));  /* 添加粉色阴影效果 */
+}
+
 .distinguish-text1 {
     color: hotpink;
 }
@@ -83,5 +96,23 @@
     height: 350px;
     /* 外发光效果 */
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
 
+.video-center {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.design-decision-title {
+    color: hotpink;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid hotpink;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
 }
