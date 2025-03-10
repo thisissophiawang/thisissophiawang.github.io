@@ -74,3 +74,14 @@
 .distinguish-text1 {
     color: hotpink;
 }
+
+.work-img-wrap {
+    padding: 2rem;
+}
+
+.work-img-wrap img {
+    height: 350px;
+    /* 外发光效果 */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+
+}
