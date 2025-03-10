@@ -1,0 +1,230 @@
+/* Project Page Styling */
+.project-article-wrap {
+  color: #fff;
+}
+
+.modern-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.modern-subtitle {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.sub-section-title {
+  color: #fff;
+  margin: 2rem 0 1rem;
+  font-weight: 500;
+}
+
+.overview-box {
+  border: 1px solid #333;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.tech-tag, .neon-tag {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid #ff69b4;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px #ff69b4;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover, .neon-tag:hover {
+  background: #ff69b4;
+  color: #000;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+.feature-item {
+  border-left: 2px solid #ff69b4;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.feature-item:hover {
+  border-left-color: #ff69b4;
+  background: rgba(255, 105, 180, 0.05);
+}
+
+.feature-title {
+  color: #ff69b4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.implementation-block {
+  margin-bottom: 2rem;
+}
+
+.implementation-block h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.feature-list,
+.research-list,
+.future-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li,
+.research-list li,
+.future-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature-list li:before,
+.research-list li:before,
+.future-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid #ff69b4;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.step-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.step-title {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-item {
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid #ff69b4;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.result-item:hover {
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+  transform: translateY(-2px);
+}
+
+.modern-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1a1a1a;
+  color: #ff69b4;
+  border: 1px solid #ff69b4;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #ff69b4;
+}
+
+.modern-button:hover {
+  background: #ff69b4;
+  color: #000;
+  box-shadow: 0 0 15px #ff69b4;
+  transform: translateY(-2px);
+}
+
+.neon-subtitle {
+  color: #ff69b4;
+  text-shadow: 0 0 5px #ff69b4;
+  margin: 3rem 0 2rem;
+  font-weight: 500;
+}
+
+.detail-section {
+  margin-bottom: 4rem;
+}
+
+.process-arrow {
+  color: #ff69b4;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 5px #ff69b4;
+}
+
+@media (max-width: 992px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-arrow {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+  
+  .modern-title {
+    font-size: 3.5rem;
+  }
+} 
