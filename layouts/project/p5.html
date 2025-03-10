@@ -3,62 +3,222 @@
   <div class="container project-article-wrap">
     <div class="row d-flex justify-content-center pb-0">
       <div class="col-12 col-lg-10 col-xl-8">
-        <h1 class="display-1 fw-bold">
-          Credit Card Fraud Detection <br>
-          <span class="fs-4">Machine Learning Based Fraud Prevention System</span><br>
+        <h1 class="display-1 fw-bold modern-title">
+          FraudMiner
         </h1>
+        <h2 class="modern-subtitle">Data Mining for Credit Card Fraud Detection</h2>
 
         <div class="lead border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">Project overview</h2>
-          A sophisticated machine learning system designed to detect fraudulent credit card transactions in real-time, utilizing advanced algorithms and data analysis techniques to protect users from financial fraud.
-          <div class="mt-5">
-            {{ partial "func/image" (dict "Src" "/img/project/p5.png" "Alt" "Credit Card Fraud Detection"  ) }}
+          <h2 class="h3 section-title">Project Overview</h2>
+          <p class="overview-text">
+            An advanced data mining system designed to detect fraudulent credit card transactions in real-time, addressing the critical challenge of imbalanced data while providing high accuracy fraud detection. This system leverages sophisticated algorithms and pattern recognition techniques to protect financial institutions and consumers from escalating credit card fraud, which currently causes over $28.65 billion in annual global losses.
+          </p>
+        </div>
+
+        <div class="tech-tags mt-4">
+          <span class="tech-tag neon-tag">DATA_MINING</span>
+          <span class="tech-tag neon-tag">MACHINE_LEARNING</span>
+          <span class="tech-tag neon-tag">FRAUD_DETECTION</span>
+          <span class="tech-tag neon-tag">IMBALANCED_LEARNING</span>
+          <span class="tech-tag neon-tag">PYTHON</span>
+          <span class="tech-tag neon-tag">SCIKIT-LEARN</span>
+          <span class="tech-tag neon-tag">NEURAL_NETWORKS</span>
+          <span class="tech-tag neon-tag">FINANCIAL_TECHNOLOGY</span>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Key Features</h2>
+          <div class="features">
+            <div class="feature-item">
+              <span class="feature-title">Real-time Transaction Monitoring</span>
+              <p>Identifies suspicious activities within sub-second processing time</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-title">Adaptive Pattern Recognition</span>
+              <p>Handles evolving fraud patterns and concept drift</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-title">Specialized Imbalanced Data Handling</span>
+              <p>Techniques optimized for the 0.17% fraud ratio</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-title">Interactive Analytics Dashboard</span>
+              <p>Visualizes transaction patterns and detection results</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-title">Cost-Sensitive Evaluation Framework</span>
+              <p>Prioritizes fraud detection over general accuracy</p>
+            </div>
           </div>
         </div>
 
         <div class="border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">Key features</h2>
-          <ul>
-            <li>Real-time transaction monitoring</li>
-            <li>Advanced anomaly detection</li>
-            <li>Machine learning based classification</li>
-            <li>Interactive dashboard for fraud analysis</li>
-          </ul>
-        </div>
-
-        <div class="border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">Architecture</h2>
-          The system implements a comprehensive fraud detection pipeline:
-           <ul>
-            <li>Data preprocessing and feature engineering</li>
-            <li>Model training and validation</li>
-            <li>Real-time prediction system</li>
-            <li>Alert and reporting mechanism</li>
-          </ul>
-        </div>
-
-        <div class="border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">Explore project</h2>
-           <div class="d-flex mt-5" style="justify-content: space-between;">
-            <div class="outer-light">PYTHON</div>
-            <div class="outer-light">MACHINE LEARNING</div>
-            <div class="outer-light">SCIKIT-LEARN</div>
-            <div class="outer-light">PANDAS</div>
+          <h2 class="h3 section-title">Technical Details</h2>
+          
+          <h3 class="h4 sub-section-title">Data Challenges Addressed</h3>
+          <div class="detail-section">
+            <div class="detail-item">
+              <span class="detail-title">Severe Class Imbalance</span>
+              <p>Only 492 fraudulent cases (0.17%) in 284,807 transactions</p>
+            </div>
+            <div class="detail-item">
+              <span class="detail-title">High Dimensional Feature Space</span>
+              <p>28 PCA-transformed features with temporal data</p>
+            </div>
+            <div class="detail-item">
+              <span class="detail-title">Non-Linear Fraud Patterns</span>
+              <p>Complex relationships requiring advanced modeling</p>
+            </div>
+            <div class="detail-item">
+              <span class="detail-title">Concept Drift</span>
+              <p>Evolving fraud techniques requiring adaptive detection methods</p>
+            </div>
           </div>
+
+          <h3 class="h4 sub-section-title mt-4">Architecture & Implementation</h3>
+          <div class="implementation-section">
+            <div class="implementation-block">
+              <h4 class="h5">Data Preprocessing Pipeline</h4>
+              <ul class="feature-list">
+                <li>Feature Transformation: RobustScaler for amount normalization</li>
+                <li>Correlation Analysis: Feature relationship visualization via heatmaps</li>
+                <li>SMOTE Implementation: Advanced sampling for minority class enhancement</li>
+                <li>Stratified Splitting: Maintained class distribution in training and validation sets</li>
+              </ul>
+            </div>
+            
+            <div class="implementation-block">
+              <h4 class="h5">Model Architecture</h4>
+              <p class="mb-2">Ensemble Approach:</p>
+              <ul class="feature-list">
+                <li>Random Forest classifier for interpretable detection</li>
+                <li>Neural Network for complex pattern recognition</li>
+                <li>Model fusion for optimized performance</li>
+              </ul>
+            </div>
+
+            <div class="implementation-block">
+              <h4 class="h5">Evaluation Framework</h4>
+              <ul class="feature-list">
+                <li>Precision-Recall Focus: Prioritized metrics for imbalanced classification</li>
+                <li>ROC Analysis: Visual performance assessment across thresholds</li>
+                <li>Confusion Matrix Visualization: Comprehensive error analysis</li>
+                <li>Cost-Sensitive Metrics: Weighted evaluations based on misclassification impact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Technologies Used</h2>
+          <div class="tech-stack">
+            <div class="tech-item">
+              <span class="tech-name">Python</span>
+              <span class="tech-desc">Core implementation language</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">Scikit-learn</span>
+              <span class="tech-desc">Machine learning algorithms and preprocessing</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">Pandas & NumPy</span>
+              <span class="tech-desc">Data manipulation and numerical operations</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">TensorFlow/Keras</span>
+              <span class="tech-desc">Neural network implementation</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">Matplotlib & Seaborn</span>
+              <span class="tech-desc">Data visualization and result presentation</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">Imbalanced-learn</span>
+              <span class="tech-desc">Specialized tools for handling class imbalance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Research Foundations</h2>
+          <p class="mb-3">This project builds on established research in fraud detection and imbalanced learning:</p>
+          <ul class="research-list">
+            <li>SMOTE (Synthetic Minority Over-sampling Technique) methodology</li>
+            <li>Cost-sensitive learning approaches for fraud detection</li>
+            <li>Ensemble methods for improved classification performance</li>
+            <li>Temporal pattern recognition in financial transactions</li>
+          </ul>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Development Process</h2>
+          <p class="mb-3">The project followed a systematic approach through multiple phases:</p>
+          <div class="process-steps">
+            <div class="process-step">
+              <span class="step-number">1</span>
+              <span class="step-title">Exploration</span>
+              <p>Comprehensive dataset analysis and problem definition</p>
+            </div>
+            <div class="process-step">
+              <span class="step-number">2</span>
+              <span class="step-title">Preprocessing</span>
+              <p>Data cleaning, transformation, and balance optimization</p>
+            </div>
+            <div class="process-step">
+              <span class="step-number">3</span>
+              <span class="step-title">Modeling</span>
+              <p>Implementation of Random Forest and Neural Network approaches</p>
+            </div>
+            <div class="process-step">
+              <span class="step-number">4</span>
+              <span class="step-title">Evaluation</span>
+              <p>Rigorous testing with specialized metrics for fraud detection</p>
+            </div>
+            <div class="process-step">
+              <span class="step-number">5</span>
+              <span class="step-title">Refinement</span>
+              <p>Iterative optimization based on performance metrics</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Results & Impact</h2>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-title">Improved Fraud Detection Rate</span>
+              <p>Significantly higher than baseline methods</p>
+            </div>
+            <div class="result-item">
+              <span class="result-title">Reduced False Positives</span>
+              <p>Minimized legitimate transactions flagged as suspicious</p>
+            </div>
+            <div class="result-item">
+              <span class="result-title">Computational Efficiency</span>
+              <p>Achieved sub-second processing times for real-world application</p>
+            </div>
+            <div class="result-item">
+              <span class="result-title">Adaptive Learning</span>
+              <p>System capable of adjusting to new fraud patterns</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Future Enhancements</h2>
+          <ul class="future-list">
+            <li>Integration with streaming data platforms for real-time implementation</li>
+            <li>Development of explainable AI components for fraud investigation support</li>
+            <li>Implementation of active learning frameworks for continuous improvement</li>
+            <li>Expansion to multi-modal fraud detection incorporating non-transaction data</li>
+          </ul>
         </div>
 
         <div class="pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">System Architecture</h2>
-          <div class="mt-5">
-            {{ partial "func/image" (dict "Src" "/img/project/p5_design.png" "Alt" "Credit Card Fraud Detection Design"  ) }}
-          </div>
-        </div>
-
-        <div class="border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3">View source on github</h2>
-          <div class="mt-5 mb-5">
-            <a href="https://github.com/thisissophiawang/Credit-Card-Fraud-Detection" aria-label="github link" class="btn btn-outline-light">
-              <small>Code</small>
+          <h2 class="h3 section-title">View Project</h2>
+          <div class="mt-4">
+            <a href="https://github.com/thisissophiawang/Credit-Card-Fraud-Detection" class="modern-button">
+              View on GitHub
             </a>
           </div>
         </div>
@@ -67,4 +227,185 @@
     </div>
   </div>
 
+  <style>
+    .modern-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .modern-subtitle {
+      font-size: 1.2rem;
+      color: #888;
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
+    .section-title {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .sub-section-title {
+      color: #fff;
+      margin: 2rem 0 1rem;
+      font-weight: 500;
+    }
+
+    .overview-box {
+      border: 1px solid #333;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.02);
+      margin-bottom: 2rem;
+      border-radius: 4px;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 2rem;
+    }
+
+    .neon-tag {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 8px 16px;
+      border: 1px solid #ff69b4;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 0 5px #ff69b4;
+      transition: all 0.3s ease;
+    }
+
+    .neon-tag:hover {
+      background: #ff69b4;
+      color: #000;
+      box-shadow: 0 0 10px #ff69b4;
+    }
+
+    .feature-item {
+      border-left: 2px solid #ff69b4;
+      padding-left: 20px;
+      margin-bottom: 2rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .feature-item:hover {
+      border-left-color: #ff69b4;
+      background: rgba(255, 105, 180, 0.05);
+    }
+
+    .feature-title {
+      color: #ff69b4;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .implementation-block {
+      margin-bottom: 2rem;
+    }
+
+    .implementation-block h4 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .feature-list,
+    .research-list,
+    .future-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .feature-list li,
+    .research-list li,
+    .future-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .feature-list li:before,
+    .research-list li:before,
+    .future-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #666;
+    }
+
+    .process-steps {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+
+    .step-number {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-title {
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .result-item {
+      padding: 20px;
+      background: rgba(26, 26, 26, 0.6);
+      border: 1px solid #ff69b4;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .result-item:hover {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .modern-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #1a1a1a;
+      color: #ff69b4;
+      border: 1px solid #ff69b4;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 5px #ff69b4;
+    }
+
+    .modern-button:hover {
+      background: #ff69b4;
+      color: #000;
+      box-shadow: 0 0 15px #ff69b4;
+      transform: translateY(-2px);
+    }
+  </style>
 {{ end }} 
