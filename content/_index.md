@@ -11,5 +11,7 @@ feature_projects:
     
   - path: "/project/p4"
     
+  - path: "/project/p5"
+    
     
 ---
