@@ -23,123 +23,265 @@
           {{/*<p><a  class="link-fancy border-secondary link-fancy-light " href="www.elektrafi.com">Website</a></p>*/}}
           <p><a  class="link-fancy border-secondary link-fancy-light " href="https://github.com/thisissophiawang/Sp25_Elektrafi">Github</a></p>
 
-          <div class="mt-5">
-            {{ partial "func/image" (dict "Src" "/img/project/p4_2.png" "Alt" ""  ) }}
-          </div>
-          <div>
-            {{ partial "func/image" (dict "Src" "/img/project/p4_3.png" "Alt" ""  ) }}
-          </div>
-          <div>
-            {{ partial "func/image" (dict "Src" "/img/project/p4_4.png" "Alt" ""  ) }}
-          </div>
-
         </div>
 
         <div class=" border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3 "> ElektraFi - Financial Challenges Platform</h2>
-          <div>
-            A gamified FinTech platform designed to improve user engagement with personal finance through interactive challenges and reward systems.
+          <h2 class="h3 ">Key Features</h2>
+          
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">Challenge System</h3>
+                <p class="feature-desc">
+                  Structured financial challenges with clear objectives, progress tracking, and reward mechanisms to encourage consistent financial habits.
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Progress Tracking</h3>
+                <p class="feature-desc">
+                  Visual representation of daily progress, completion statistics, and streak counters to motivate continuous engagement.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">🎖</div>
+                <h3 class="feature-title">Badge System</h3>
+                <p class="feature-desc">
+                  Achievement badges (Bronze, Silver, Gold) and special rewards like profile themes and avatar frames to recognize user accomplishments.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">⏳</div>
+                <h3 class="feature-title">Streak Mechanics</h3>
+                <p class="feature-desc">
+                  Track and reward consecutive days or weeks of completing financial tasks, encouraging habit formation and consistency.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 class="feature-title">Points Economy</h3>
+                <p class="feature-desc">
+                  Point-based reward system that quantifies user progress and unlocks rewards at specific point thresholds (e.g., 3000 points).
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-title">Financial Dashboard</h3>
+                <p class="feature-desc">
+                  Integration with the main financial dashboard, showing how challenges connect to overall financial health metrics and goals.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-{{/*
-        <div class="  pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3 ">Key features</h2>
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Implementation Process</h2>
+          <div class="implementation-steps">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3 class="step-title">Research & Concept Development</h3>
+                <p class="step-desc">Analyzed fintech competitors and gamification best practices to identify effective engagement mechanisms and opportunity areas. Developed concept prototypes for the gamification system focused on financial health.</p>
+              </div>
+            </div>
 
-          <div class=" mb-5" >
-            <p>🏆 Challenge System</p>
-            <p>Structured financial challenges with clear objectives, progress tracking, and reward mechanisms to encourage consistent financial habits.</p>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3 class="step-title">UI/UX Design</h3>
+                <p class="step-desc">Created intuitive interface designs in Figma for the "Tasks" and "Financial Challenges" pages, with emphasis on clear progress visualization, achievement displays, and challenge cards.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3 class="step-title">Frontend Development</h3>
+                <p class="step-desc">Implemented the designed UI using TypeScript/TSX and SCSS, creating responsive components for challenge cards, progress indicators, badges, and streaks counters.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3 class="step-title">Backend Integration</h3>
+                <p class="step-desc">Extended the backend (Node.js, Python) to support challenge tracking, streak calculations, points accumulation, and badge award logic. Implemented APIs for challenge completion verification.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3 class="step-title">Testing & Optimization</h3>
+                <p class="step-desc">Conducted user testing to validate engagement metrics and refined challenge difficulty levels, point allocations, and visual feedback based on user response data.</p>
+              </div>
+            </div>
           </div>
-
-          <div class=" mb-5" >
-            <p>📊 Progress Tracking</p>
-            <p>Visual representation of daily progress, completion statistics, and streak counters to motivate continuous engagement.</p>
-          </div>
-
-          <div class=" mb-5" >
-            <p>🎖 Badge System</p>
-            <p>Achievement badges (Bronze, Silver, Gold) and special rewards like profile themes and avatar frames to recognize user accomplishments.</p>
-          </div>
-
-          <div class=" mb-5" >
-            <p>⏳ Streak Mechanics</p>
-            <p>Track and reward consecutive days or weeks of completing financial tasks, encouraging habit formation and consistency.</p>
-          </div>
-
-          <div class=" mb-5" >
-            <p>💰 Points Economy</p>
-            <p>Point-based reward system that quantifies user progress and unlocks rewards at specific point thresholds (e.g., 3000 points).</p>
-          </div>
-
-          <div class=" mb-5" >
-            <p>📈 Financial Dashboard</p>
-            <p>Integration with the main financial dashboard, showing how challenges connect to overall financial health metrics and goals.</p>
-          </div>
-
         </div>
 
-
-        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3 ">Implementation Process</h2>
-          <ol>
-            <li>
-              <span class="fs-6">Research & Concept Development</span>
-              <ul class="fs-0">
-                <li>Analyzed FinTech competitors and gamification best practices to identify effective engagement mechanisms.</li>
-                <li>Developed concept prototypes for the gamification system focused on financial health.</li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="fs-6">UI/UX Design</span>
-              <ul class="fs-0">
-                <li>Created intuitive interface designs in Figma for the "Tasks" and "Financial Challenges" pages.</li>
-                <li>Emphasized clear progress visualization, achievement displays, and challenge cards.</li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="fs-6">Frontend Development</span>
-              <ul class="fs-0">
-                <li>Implemented the designed UI using TypeScript/TSX and SCSS, creating responsive components for challenge cards, progress indicators, badges, and streak counters.</li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="fs-6">Backend Integration</span>
-              <ul class="fs-0">
-                <li>Extended the backend (Node.js, Python) to support challenge tracking, streak calculations, points accumulation, and badge award logic.</li>
-                <li>Implemented APIs for challenge completion verification.</li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="fs-6">Testing & Optimization</span>
-              <ul class="fs-0">
-                <li>Conducted user testing to validate engagement metrics.</li>
-                <li>Refined challenge difficulty levels, point allocations, and visual feedback based on user response data.</li>
-              </ul>
-            </li>
-
-          </ol>
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 distinguish-text1">Figma Design (Prototype) </h2>
+          <div class="mt-5" style="max-width: 70%; margin-left: auto; margin-right: auto;">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_1.jpg" "Alt" "Figma Design for ElektraFi"  ) }}
+          </div>
         </div>
 
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 distinguish-text1">A/B Testing Approach</h2>
+          
+          <div class="development-process mb-5">
+            <div class="process-flow">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-details">
+                  <h4>Baseline Analysis</h4>
+                  <p>Established baseline metrics for user engagement and platform usage patterns</p>
+                </div>
+                <div class="arrow">→</div>
+              </div>
 
-        <div class=" border-top pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3 ">Results & Impact</h2>
-          <ul>
-            <li>32% Increase in daily active users</li>
-            <li>47% Higher user retention rate</li>
-            <li>28% Increase in savings goal completion</li>
-            <li>4.2x More frequent budget reviews</li>
-          </ul>
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-details">
+                  <h4>Test Design</h4>
+                  <p>Designed test groups and identified key metrics for measuring success</p>
+                </div>
+                <div class="arrow">→</div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-details">
+                  <h4>Implementation</h4>
+                  <p>Deployed Task Page features to test group while maintaining control group</p>
+                </div>
+                <div class="arrow">→</div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-details">
+                  <h4>Data Collection</h4>
+                  <p>Gathered user interaction data and feedback from both test and control groups</p>
+                </div>
+                <div class="arrow">→</div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-number">5</div>
+                <div class="step-details">
+                  <h4>Analysis & Insights</h4>
+                  <p>Analyzed results for statistical significance and derived actionable insights</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <p>The A/B testing project revealed a transformative approach to understanding user engagement within a fintech platform targeting corporate employees. By systematically comparing user behavior before and after the introduction of the gamified Task Page, we uncovered critical insights into platform adoption dynamics. The experimental design allowed us to move beyond anecdotal evidence, providing quantitative proof of the intervention's effectiveness.</p>
+          </div>
+
+          <div class="mb-4">
+            <p>Our most compelling finding was the potential shift in user interaction patterns. The comparison between pre and post-implementation metrics highlighted the power of targeted design interventions. By carefully tracking registration rates, time spent on the platform, and user satisfaction, we were able to construct a nuanced understanding of how gamification can potentially overcome barriers to digital platform adoption.</p>
+          </div>
+
+          <div class="ab-testing-diagram mb-5">
+            <div class="diagram-container">
+              <div class="test-group control">
+                <h4>Control Group</h4>
+                <div class="group-content">
+                  <p>Original Platform<br>
+                  Without Task Page</p>
+                  <ul>
+                    <li>Lower Engagement</li>
+                    <li>Limited User Interaction</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comparison-arrow">
+                <span>Compare Metrics</span>
+              </div>
+              <div class="test-group experimental">
+                <h4>Experimental Group</h4>
+                <div class="group-content">
+                  <p>Platform with Task Page<br>
+                  + Gamification Feature</p>
+                  <ul>
+                    <li>Badge Collection</li>
+                    <li>Increased User Engagement</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="metrics-note">
+              Key Metrics: Registration Rates, Platform Usage, User Satisfaction
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <p>The project exemplified the intersection of data science, user experience design, and strategic product development. Through rigorous A/B testing, we demonstrated how thoughtful, data-driven approaches can unlock new possibilities for user engagement and platform growth.</p>
+          </div>
+
+          <div class="mt-5 mb-5" style="max-width: 70%; margin-left: auto; margin-right: auto;">
+            {{ partial "func/image" (dict "Src" "/img/project/p4_surveyimage.png" "Alt" "Survey Results"  ) }}
+          </div>
+
+          <div class="mb-4">
+            <h3 class="h4 distinguish-text1">Key Technologies:</h3>
+            <ul class="feature-list">
+              <li>A/B Testing Methodology</li>
+              <li>Statistical Analysis</li>
+              <li>User Experience Research</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="h4 distinguish-text1">Outcome:</h3>
+            <p>Provided empirical insights into user engagement strategies, offering a data-driven framework for improving platform adoption and user interaction.</p>
+          </div>
         </div>
-*/}}
 
+        <div class="border-top pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3 section-title">Results & Impact</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">32%</div>
+              <div class="result-desc">Increase in daily active users</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">47%</div>
+              <div class="result-desc">Higher user retention rate</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">28%</div>
+              <div class="result-desc">Increase in savings goal completion</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">4.2x</div>
+              <div class="result-desc">More frequent budget reviews</div>
+            </div>
+          </div>
+        </div>
 
-        <div class="  pt-5 mt-5" data-aos="fade-up">
-          <h2 class="h3 ">View Project</h2>
-
+        <div class="pt-5 mt-5" data-aos="fade-up">
+          <h2 class="h3">View Project</h2>
           <div class="mt-5 mb-5">
             <a href="https://elektrafi.io/" aria-label="github link" class="btn btn-outline-light">
               <small>Project</small>
@@ -147,12 +289,335 @@
           </div>
         </div>
 
+        <style>
+          .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            height: 100%;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(111, 0, 255, 0.1);
+          }
 
+          .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(111, 0, 255, 0.1);
+            border-color: rgba(111, 0, 255, 0.3);
+          }
 
+          .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #6f00ff;
+          }
 
+          .feature-title {
+            color: #6f00ff;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
 
+          .feature-desc {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+          }
 
+          .implementation-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+          }
 
+          .step-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(111, 0, 255, 0.1);
+            transition: all 0.3s ease;
+          }
+
+          .step-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(111, 0, 255, 0.1);
+            border-color: rgba(111, 0, 255, 0.3);
+          }
+
+          .step-number {
+            width: 32px;
+            height: 32px;
+            background: #6f00ff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+          }
+
+          .step-content {
+            flex: 1;
+          }
+
+          .step-title {
+            color: #6f00ff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+
+          .step-desc {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+
+          .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+          }
+
+          .result-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(111, 0, 255, 0.1);
+            transition: all 0.3s ease;
+          }
+
+          .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(111, 0, 255, 0.1);
+            border-color: rgba(111, 0, 255, 0.3);
+          }
+
+          .result-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #6f00ff;
+            margin-bottom: 0.5rem;
+          }
+
+          .result-desc {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.4;
+          }
+
+          @media (max-width: 576px) {
+            .results-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          .development-process {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border: 1px solid rgba(111, 0, 255, 0.1);
+          }
+
+          .process-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+          }
+
+          .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            position: relative;
+            padding: 1rem;
+            background: #ffffff;
+            border: 1px solid rgba(111, 0, 255, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+          }
+
+          .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(111, 0, 255, 0.1);
+            border-color: rgba(111, 0, 255, 0.3);
+          }
+
+          .process-step .step-number {
+            background: #6f00ff;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+          }
+
+          .step-details {
+            flex: 1;
+          }
+
+          .step-details h4 {
+            color: #6f00ff;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+          }
+
+          .step-details p {
+            color: #333;
+            margin: 0;
+            font-size: 0.9rem;
+          }
+
+          .arrow {
+            color: #6f00ff;
+            font-size: 1.5rem;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+          }
+
+          .process-step:last-child .arrow {
+            display: none;
+          }
+
+          @media (max-width: 768px) {
+            .process-flow {
+              gap: 2rem;
+            }
+          }
+
+          .ab-testing-diagram {
+            text-align: center;
+            padding: 2rem 0;
+          }
+
+          .diagram-title {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+          }
+
+          .diagram-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+          }
+
+          .test-group {
+            flex: 1;
+            max-width: 300px;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+          }
+
+          .test-group:hover {
+            transform: translateY(-5px);
+          }
+
+          .test-group h4 {
+            color: #fff;
+            margin: 0;
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+          }
+
+          .control h4 {
+            background: #6f00ff;
+          }
+
+          .experimental h4 {
+            background: #6f00ff;
+          }
+
+          .group-content {
+            padding: 1rem 0;
+          }
+
+          .group-content p {
+            margin: 0 0 1rem 0;
+            color: #333;
+            font-weight: 500;
+          }
+
+          .group-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+          }
+
+          .group-content li {
+            color: #666;
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+          }
+
+          .group-content li:before {
+            content: "•";
+            color: #6f00ff;
+            position: absolute;
+            left: 0.5rem;
+          }
+
+          .comparison-arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #6f00ff;
+            font-weight: 500;
+          }
+
+          .comparison-arrow:before {
+            content: "→";
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .metrics-note {
+            color: #ffffff;
+            margin-top: 1.5rem;
+            font-style: italic;
+            background: #6f00ff;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+          }
+
+          @media (max-width: 768px) {
+            .diagram-container {
+              flex-direction: column;
+            }
+
+            .comparison-arrow {
+              transform: rotate(90deg);
+              margin: 1rem 0;
+            }
+
+            .test-group {
+              max-width: 100%;
+            }
+          }
+        </style>
 
       </div>
     </div>
